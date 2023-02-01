@@ -1,5 +1,4 @@
-from bottle import route, response, post, request, app, request
-from math import log10, floor
+from bottle import app
 import routes
 from bottle_cors_plugin import cors_plugin
 

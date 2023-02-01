@@ -26,18 +26,5 @@ def similarity(sentences1, sentences2):
         for sentence, pairs in similarities.items()
         for questions, score in pairs
     ]
-
-    # for i in range(len(sentences1)):
-    #     result.append("{}, {}: {} similarity".format(sentences1[i], sentences2[i], cosine_scores[i][i]))
-
-    # result = "{}. {}: {:0.4f} similarity".format(sentences1[0], sentences2[0], cosine_scores[0][0])
-
-
-
-    # result = {
-    #     "sentence1": sentences1[0],
-    #     "sentence2": sentence2[0],
-    #     "similarity": cosine_scores[0][0]
-    # }
     
     return result

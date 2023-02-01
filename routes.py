@@ -2,11 +2,10 @@ from bottle import request, response
 from bottle import post, get, put, delete
 import json, sys
 
-from compare import similarity
+from comparison_model import similarity
 
 @post('/compare')
 def compare_handler():
-    print("Here")
     try: 
         data = request.json
     except:
@@ -14,8 +13,6 @@ def compare_handler():
     
     if data is None:
         raise ValueError
-    
-    print(data)
 
     result = similarity(data["sentences1"],data["sentences2"])
 
